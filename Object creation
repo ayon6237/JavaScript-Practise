@@ -1,0 +1,38 @@
+
+//object creation
+
+//way 1
+const ob ={
+    name:"Ayon",
+    age:23,
+    display :function(){
+        console.log(this.name,this.age)
+    }
+}
+ob.display()
+
+//way 2
+function xyz(name,age){
+    this.name=name,
+    this.age=age
+}
+const ob1=new xyz("Ayon",23)
+console.log(ob1.name,ob1.age)
+
+//way 3
+const ob3=Object.create({},{
+    name : {value:"Ayon"},
+    age :{value : 23}
+})
+console.log(ob3.name,ob3.age)
+
+//way 4 ES6 class
+
+class Car{
+    constructor(color,brand){
+        this.color = color,
+        this.brand = brand
+    }
+}
+const c = new Car("Blue","Tesla")
+console.log(c.color,c.brand)

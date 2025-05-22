@@ -1,0 +1,7 @@
+//spread operator
+
+function abc(x,y,z){
+    console.log(x+y+z)
+}
+const arr = [1,2,3]
+abc(...arr)

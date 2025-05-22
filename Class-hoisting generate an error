@@ -1,0 +1,10 @@
+//Class hoisting
+const ob = new Car();
+class Car{
+    constructor(){
+        this.name="Tesla"
+    }
+}
+console.log(ob.name)
+
+//this will generate an error

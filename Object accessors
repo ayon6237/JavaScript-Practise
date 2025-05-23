@@ -1,0 +1,11 @@
+const ob ={
+    color:"Green",
+    set setColor(param){
+        return this.color=param
+    },
+    get getColor(){
+        return this.color
+    }
+}
+ob.setColor="Red"
+console.log(ob.getColor)

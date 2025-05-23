@@ -1,0 +1,12 @@
+
+class ob{
+    static sum(){
+        console.log("This is a sum function")
+    }
+    mul(){
+        console.log("This is a mul function")
+    }
+}
+const o = new ob()
+ob.sum()
+o.mul()

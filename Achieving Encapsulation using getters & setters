@@ -1,0 +1,13 @@
+
+class abc{
+    #name = "Ayon";
+    get getName(){
+        return this.#name
+    }
+    set setName(name){
+        this.#name = name
+    }
+}
+const ob = new abc();
+ob.setName = "Ayon"
+console.log(ob.getName)

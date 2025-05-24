@@ -1,0 +1,23 @@
+
+
+
+
+class bike {
+    constructor(){
+        this.price = 2000000;
+    }
+    getPrice(){
+        return this.price
+    }
+}
+class fzs extends bike {
+    constructor(){
+        super();
+        this.name = "fzs"
+    }
+    getName(){
+        return this.name
+    }
+}
+const ob = new fzs();
+console.log(ob.getPrice(),ob.getName()) 

@@ -1,0 +1,10 @@
+
+
+
+const ob = {
+    name:"Ayon",
+    mobile_no:{
+        sim1:"01601445388"
+    }
+}
+console.log(ob.mobile_no?.sim2);

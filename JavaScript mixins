@@ -1,0 +1,13 @@
+const ob1={
+    display(){
+        console.log("I am ob1")
+    }
+}
+const ob2={
+    show(){
+        console.log("I am ob2")
+    }
+}
+Object.assign(ob2,ob1);
+ob2.display();
+ob2.show();

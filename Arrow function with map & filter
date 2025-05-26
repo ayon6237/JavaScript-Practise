@@ -1,0 +1,32 @@
+
+
+const data =[
+    {
+        id:1,
+        name:"Ayon",
+        cgpa:3.58
+    },
+    {
+        id:2,
+        name:"Naim",
+        cgpa:3.00
+    },
+    {
+        id:1,
+        name:"Shakinul",
+        cgpa:3.40
+    },
+    {
+        id:1,
+        name:"Ratul",
+        cgpa:2.50
+    }
+]
+const display =()=>{
+    return data.filter((x)=>{
+        return x.cgpa>3;
+    }).map((y)=>{
+        return y.name;
+    })
+}
+console.log(display())

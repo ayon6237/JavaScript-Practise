@@ -1,0 +1,38 @@
+
+
+const getData =()=>{
+    try {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET','https://jsonplaceholder.typicode.com/posts');
+
+        xhr.onload =()=>{
+            console.log(xhr.response)
+        }
+
+        xhr.send();
+    } catch (error) {
+        
+    }
+}
+
+const makeData= (method,url,data)=>{
+    const xhr=new XMLHttpRequest();
+    xhr.open(method,url);
+    xhr.setRequestHeader('Content-type','application/json')
+    xhr.onload=()=>{
+        console.log(xhr.response);
+    }
+    xhr.send(JSON.stringify(data));
+}
+const setData=()=>{
+   try {
+     makeData('POST','https://jsonplaceholder.typicode.com/posts',{
+        title:'Hello Ayon',
+        id:101,
+        description:'Magna lorem erat et kasd amet lorem, voluptua magna ut sed lorem. Dolore ipsum amet magna dolore aliquyam sit, sadipscing.'
+    })
+   } catch (error) {
+    console.log(error.message)
+   }
+}
+setData();
